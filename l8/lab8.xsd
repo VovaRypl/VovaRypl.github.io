@@ -13,9 +13,9 @@
                         <xs:element type="xs:string" name="NUM" />
                         <xs:element type="xs:string" name="GENRE" />
                         <xs:element type="xs:string" name="TOPIC" />
-                    </xs>
-                </xs>
-            </xs>
-        </xs>
+                    </xs:element>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
     </xs:element>
 </xs:schema>
