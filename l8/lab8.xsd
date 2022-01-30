@@ -1,0 +1,21 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="BOOKS">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element type="xs:string" name="ID" />
+                <xs:element type="xs:string" name="NAME" />
+                <xs:element type="xs:string" name="AUTHOR" />
+                <xs:element type="xs:string" name="REDACTION" />
+                <xs:element type="xs:string" name="COPIES" />
+                <xs:element type="xs:string" name="ISSUED" />
+                <xs:element name="RACK" />
+                    <xs:complexType>
+                        <xs:element type="xs:string" name="NUM" />
+                        <xs:element type="xs:string" name="GENRE" />
+                        <xs:element type="xs:string" name="TOPIC" />
+                    </xs>
+                </xs>
+            </xs>
+        </xs>
+    </xs:element>
+</xs:schema>

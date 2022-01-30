@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BOOKS>
+    <BOOK>
+        <ID>1230</ID>
+        <AUTHOR>Joanne Rowling</AUTHOR>
+        <RACK>
+            <NUM>5</NUM>
+            <GENRE>Фантастика</GENRE>
+            <TOPIC>Волшебство</TOPIC>
+        </RACK>
+        <NAME>Гарри Поттер и философский камень</NAME>
+        <REDACTION>GIFTMAN</REDACTION>
+        <COPIES>26</COPIES>
+        <ISSUED>8</ISSUED>
+    </BOOK>
+    <BOOK>
+        <ID>1228</ID>
+        <AUTHOR>Joanne Rowling</AUTHOR>
+        <RACK>
+            <NUM>5</NUM>
+            <GENRE>Фантастика</GENRE>
+            <TOPIC>Волшебство</TOPIC>
+        </RACK>
+        <NAME>Гарри Поттер и тайная комната</NAME>
+        <REDACTION>GIFTMAN</REDACTION>
+        <COPIES>15</COPIES>
+        <ISSUED>5</ISSUED>
+    </BOOK>
+    <BOOK>
+        <ID>1229</ID>
+        <AUTHOR>Joanne Rowling</AUTHOR>
+        <RACK>
+            <NUM>5</NUM>
+            <GENRE>Фантастика</GENRE>
+            <TOPIC>Волшебство</TOPIC>
+        </RACK>
+        <NAME>Гарри Поттер и узник Азкабана</NAME>
+        <REDACTION>РОСМЭН</REDACTION>
+        <COPIES>20</COPIES>
+        <ISSUED>12</ISSUED>
+    </BOOK>
+</BOOKS>

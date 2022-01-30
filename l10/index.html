@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td {
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        numObj = {
+            "1228": "тысяча двести двадцать восемь",
+            "1229": "тысяча двести двадцать девять",
+            "1230": "тысяча двести тридцать",
+            "5": "пять",
+            "15": "пятнадцать",
+            "20": "двадцать",
+            "26": "двадцать шесть",
+            "12": "двенадцать",
+            "8": "восемь"
+        }
+
+        const xml = new ActiveXObject("Microsoft.XMLDOM");
+        xml.async = "false";
+        xml.load("lab9.xml");
+        alert(xml.text);
+
+        document.writeln("<table><tr><th>ID</th><th>Название</th><th>Автор</th><th>Редакция</th><th>Копий</th><th>Выдано</th><th>Стеллаж(номер|жанр|тематика)</th></tr>");
+		
+        const ids = xml.getElementsByTagName("ID");
+        const authors = xml.getElementsByTagName("AUTHOR");
+        const redactions = xml.getElementsByTagName("REDACTION");
+        const names = xml.getElementsByTagName("NAME");
+        const copies = xml.getElementsByTagName("COPIES");
+        const issueds = xml.getElementsByTagName("ISSUED");
+        const numRacks = xml.getElementsByTagName("NUM");
+        const genres = xml.getElementsByTagName("GENRE");
+        const topics = xml.getElementsByTagName("TOPIC");
+
+        for(let i=0; i<ids.length; i++){
+            document.writeln("<tr>");
+            document.writeln("<td>" + numObj[ids[i].text] + "</td>");
+            document.writeln("<td>" + names[i].text + "</td>");
+            document.writeln("<td>" + authors[i].text + "</td>");
+            document.writeln("<td>" + redactions[i].text + "</td>");
+            document.writeln("<td>" + numObj[copies[i].text] + "</td>");
+            document.writeln("<td>" + numObj[issueds[i].text] + "</td>");
+            document.writeln("<td>" + numObj[numRacks[i].text] + "|" + genres[i].text + "|" + topics[i].text + "</td>");
+            document.writeln("</tr>");
+        }
+
+        document.writeln("</table>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Лаб 4</title>
+</head>
+<body>
+    <div class="cont">
+        <div class="wrapper">
+            <div class="menu_cont">
+                <div class="menu">
+                    <div onclick="changeClass(event)" class="button_menu">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <ul id="ul_menu">
+                        <li><a href="lab2.html">Лаб работа №2</a></li>
+                        <li><a href="lab3.html">Лаб работа №3</a></li>
+                        <li><a href="lab4.html">Лаб работа №4</a></li>
+                        <li><a href="lab5.html">Лаб работа №5</a></li>
+                        <li><a href="lab6.html">Лаб работа №6</a></li>
+                        <li><a href="lab7.html">Лаб работа №7</a></li>
+                        <li><a href="lab8.html">Лаб работа №8</a></li>
+                        <li><a href="lab9.html">Лаб работа №9</a></li>
+                        <li><a href="lab10.html">Лаб работа №10</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <div class="report">
+                    <span>Отчет</span><br>
+                    о лабораторных работах по курсу<br>
+                    «Современные технологии Интернет-программирования»<br>
+                    студента группы ИПЗ-19-1<br>
+                    Чирченко В. Д.<br>
+                </div>
+                <div class="result">
+                    <div class="condition">
+                        1.	Создать страницу с динамическим содержанием "Проверка значений,
+                        введенных пользователем в поля формы для регистрации". Форма должна
+                        содержать поля «Имя», «Фамилия», «Наименование организации», «Номер
+                        кредитной карты», «Номер телефона», «Адрес электронной почты», кнопки
+                        «Отправить» и «Очистить».
+                    </div>
+                    <div class="condition">
+                        2.	Осуществить проверку заполненности данными всех полей.
+                    </div>
+                    <div class="condition">
+                        3.	Построить шаблон для проверки данных кредитной карточки с
+                        ограничением количества попыток неправильного ввода данных.
+                    </div>
+                    <div class="condition">
+                        4.	Последняя проверка должна контролировать структуру и содержимое полей
+                        (правильность ввода имени и фамилии,номера телефона,электронного адреса).
+                    </div>
+                    <div class="condition">
+                        5.	Дана строка aaa aaa aaa. Напишите регулярное выражение,
+                        которое заменит первое aaa на !.
+                    </div>
+                    <div class="res">
+                        <div class="res1">
+                            <input placeholder="Имя" class="reg" id="name" type="text">
+                            <input placeholder="Фамилия" class="reg" id="surname" type="text">
+                            <input placeholder="Наименование организации" class="reg" id="name_corp" type="text">
+                            <input placeholder="Номер кредитной карты" class="reg card" id="card" type="number" value="4158758846559045">
+                            <div>
+                                <input placeholder="срок действия" class="reg card" id="expiry_date" type="date" value="2022-12-02">
+                                <input placeholder="CVV" class="reg card" id="CVV" type="number" value="851">
+                            </div>
+                            <span class="attemps"></span>
+                            <input placeholder="Номер телефона(380...)" class="reg" id="num" type="tel">
+                            <input placeholder="Адрес электронной почты" class="reg" id="email" type="email">
+                            <div id="send" class="button" onclick="check_fields()">
+                                Отправить
+                            </div>
+                            <div id="clear" class="button">
+                                Очистить
+                            </div>
+                            <div class="response">
+
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="res1">
+                            <input id="task2" type="text" value="aaa aaa aaa">
+                            <div id="send" class="button" onclick="perform()">
+                                Заменить
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="code_cont">
+                <div class="links">
+                    <a target="_blanc" href="#">HTML</span></a>
+                    <a target="_blanc" href="#">CSS</span></a>
+                    <a target="_blanc" href="#">JS</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

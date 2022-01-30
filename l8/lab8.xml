@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BOOKS>
+    <BOOK>
+        <ID>
+            1228
+        </ID>
+        <AUTHOR>
+            1000
+        </AUTHOR>
+        <RACK>
+            <NUM>
+                5
+            </NUM>
+            <GENRE>
+                Фантастика
+            </GENRE>
+            <TOPIC>
+                Развлечение и рассказ о выдуманном мире волшебников.
+            </TOPIC>
+        </RACK>
+        <NAME>
+            Гарри Поттер и философский камень
+        </NAME>
+        <REDACTION>
+            GIFTMAN
+        </REDACTION>
+        <COPIES>
+            26
+        </COPIES>
+        <ISSUED>
+            8
+        </ISSUED>
+    </BOOK>
+</BOOKS>
